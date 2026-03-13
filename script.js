@@ -3,7 +3,7 @@ let result = document.getElementById('result');
 
 btn.addEventListener('click', function(){
     const numbers = document.getElementById('numbers').value;
-    const digits = document.getElementById('digits').value;
+    const digits = document.getElementById('digits').value.trim();
 
     if (!numbers || !digits){
         result.innerHTML = "Заповніть поля!";
